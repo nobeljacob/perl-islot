@@ -5,8 +5,9 @@ import { RouterModule} from '@angular/router';
 
 import { AppComponent } from './app.component';
 
-import { LandingPageComponent } from './registration/pages/landing-page/landing-page.component';
+
 import { routes } from './app.routes';
+
 
 
 
@@ -14,7 +15,9 @@ import { routes } from './app.routes';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    
+  
       
   
   ],
