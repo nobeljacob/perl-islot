@@ -1,22 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule} from '@angular/router'; 
 
 
 import { AppComponent } from './app.component';
-import { HomePageComponent } from './home-page/home-page.component';
+
 import { LandingPageComponent } from './registration/pages/landing-page/landing-page.component';
-import { RegistrationComponent } from './registration/registration.component';
+import { routes } from './app.routes';
+
+
+
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomePageComponent,
-    LandingPageComponent,
-    RegistrationComponent
+    AppComponent
+      
+  
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routes),
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
